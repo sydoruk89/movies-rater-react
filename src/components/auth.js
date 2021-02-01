@@ -23,7 +23,7 @@ function Auth(){
 
     const registerClicked = () =>{
         API.registerUser({username, password})
-        .then(() => loginClicked())
+        .then((data) => loginClicked())
         .catch(error => console.log(error))
     }
 
